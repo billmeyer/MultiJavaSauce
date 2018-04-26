@@ -57,8 +57,8 @@ public class TestBase
         // @formatter:off
         return new Object[][]{
 //                new Object[]{"MicrosoftEdge", "14.14393", "Windows 10", "1920x1080"},
-                new Object[]{"MicrosoftEdge", "16.16299", "Windows 10", "1440x900"}
-                new Object[]{"MicrosoftEdge", "16.16299", "Windows 10", "1600x1500"} // <== DESIGNED TO FAIL ON SCREEN RESOLUTION
+                new Object[]{"MicrosoftEdge", "16.16299", "Windows 10", "1440x900"},
+                new Object[]{"MicrosoftEdge", "16.16299", "Windows 10", "1600x1500"}, // <== DESIGNED TO FAIL ON SCREEN RESOLUTION
                 new Object[]{"firefox", "149.0", "Windows 10", "1440x900"}, // <== DESIGNED TO FAIL ON BROWSER VERSION
                 new Object[]{"internet explorer", "11.0", "Windows 7", "1280x1024"},
                 new Object[]{"safari", "11.0", "OS X 10.13", "1600x1200"},   // High Sierra

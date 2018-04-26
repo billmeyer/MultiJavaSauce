@@ -2,7 +2,7 @@
 
 <!-- TestNG Documentation: http://testng.org/doc/documentation-main.html -->
 <!-- Change "false" to "tests", "methods", "classes" or "instances" for running in parallel. See more details in the TestNG documentation. -->
-<suite name="Parallel Run Suite" parallel="methods" thread-count="10" verbose="1">
+<suite name="Parallel Run Suite" parallel="methods" thread-count="20" verbose="1">
     <!--<test name="Android Test">-->
         <!--<classes>-->
             <!--<class name="com.saucelabs.billmeyer.LoanCalcAndroidEmulatorTest"/>-->
@@ -21,14 +21,14 @@
 
     <test name="All Classes Test">
         <classes>
-            <class name="com.saucelabs.billmeyer.tests.FollowLinkTest"/>
-            <class name="com.saucelabs.billmeyer.tests.TextInputTest"/>
+            <class name="com.saucelabs.billmeyer.test.FollowLinkTest"/>
+            <class name="com.saucelabs.billmeyer.test.TextInputTest"/>
         </classes>
     </test>
 
     <test name="All Packages Test">
         <packages>
-            <package name="com.saucelabs.billmeyer.tests"/>
+            <package name="com.saucelabs.billmeyer.test"/>
         </packages>
     </test>
 </suite>
