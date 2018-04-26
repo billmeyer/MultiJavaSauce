@@ -1,4 +1,4 @@
-package com.saucelabs.billmeyer.tests;
+package com.saucelabs.billmeyer.test;
 
 import com.saucelabs.billmeyer.pages.GuineaPigPage;
 import org.openqa.selenium.InvalidElementStateException;
