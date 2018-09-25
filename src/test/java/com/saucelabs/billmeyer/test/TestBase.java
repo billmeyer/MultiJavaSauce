@@ -12,7 +12,6 @@ import org.testng.annotations.DataProvider;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Date;
 
 /**
  * Simple TestNG test which demonstrates being instantiated via a DataProvider in order to supply multiple browser combinations.
@@ -137,7 +136,7 @@ public class TestBase
         caps.setCapability(CapabilityType.BROWSER_NAME, browser);
         caps.setCapability(CapabilityType.VERSION, version);
         caps.setCapability(CapabilityType.PLATFORM, os);
-        caps.setCapability("name", String.format("%s - %s %s on %s [%s]", methodName, browser, version, os, new Date()));
+        caps.setCapability("name", String.format("%s - %s %s on %s", methodName, browser, version, os));
         caps.setCapability("screenResolution", screenResolution);
         caps.setCapability("seleniumVersion", "3.7.1");
         caps.setCapability("build", System.getenv("JOB_NAME") + "__" + System.getenv("BUILD_NUMBER"));
